@@ -1,14 +1,13 @@
 // src/Quote.js
 import React from "react";
 
-const Quote = props => (
-  <figure>
-    <img src={props.image} alt={props.character} />
-    <figcaption>
-      <blockquote>{props.quote}</blockquote>
-      <cite>{props.character}</cite>
-    </figcaption>
-  </figure>
-);
-
+const Quote = ({ habitants }) => {
+  return(
+    <figure>
+      <h3>{habitants.quote}</h3>
+      <img src={habitants.image} alt={habitants.character}/>
+      <h2>{habitants.character}</h2>
+    </figure>
+  );
+};
 export default Quote;
