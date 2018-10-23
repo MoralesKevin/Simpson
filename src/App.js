@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Quote from "./Quote"
 import GenerateSimpsons from './GenerateSimpsons'
+import NameForm from "./NameForm"
 import "./App.css";
 
 const  Simpson = {
@@ -38,6 +39,7 @@ class App extends Component {
           <img src="http://assets.stickpng.com/thumbs/5a05b6b79cf05203c4b6045f.png" className={`App-logo ${statut}`} alt="logo" />
           <h1 className="App-title">Simpsons Quotes</h1>
         </header>
+        <NameForm className="InputName"/>
         <GenerateSimpsons selectSimpsons = {() => this.getSimpson()} />
         <Quote habitants={this.state.habitants}/>
       </div>
